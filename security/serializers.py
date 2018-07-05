@@ -12,4 +12,4 @@ class PrimaryKeyToSecuritySerializer(serializers.ModelSerializer):
     #user = PrimaryKeySerializer(required=True)
     class Meta:
         model = SecurityOffice
-        fields = ('user', 'Name', 'Unit', 'MobileNumber', 'VisitorMailID', 'Remarks', 'Datetime')
+        fields = ('user', 'Name', 'Unit', 'MobileNumber', 'VisitorMailID', 'Remarks', 'Time', 'Date')

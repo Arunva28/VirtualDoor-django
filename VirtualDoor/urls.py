@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^user_info/', include('userinfo.urls')),
     url(r'^security/', include('security.urls')),
+    url(r'^accounts/', include('accounts.urls')),
    # url(r'^api-token-auth/', obtain_auth_token),
 
 ]

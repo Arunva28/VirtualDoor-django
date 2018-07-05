@@ -28,3 +28,12 @@ class AddUserSerializer(serializers.ModelSerializer):
             user = user_serializer.save()
         validated_data['user_id'] = user.pk
         return super(AddUserSerializer, self).create(validated_data)
+
+
+class ForgotPasswordSerializer(serializers.ModelSerializer):
+   # user_email = serializers.PrimaryKeyRelatedField(queryset=BasicUserInfo.objects.all, required=True)
+
+    class Meta:
+        model = ForgotPassword
+        fields = ('user_email', 'otp', 'date_time')
+
